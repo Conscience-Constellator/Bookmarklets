@@ -5,21 +5,23 @@
   <title>My Bookmarklets</title>
 </head>
 <body>
-  <h1>Bookmarklets</h1>
-  <p>You can drag these links to your bookmarks bar:</p>
+	<h1>Bookmarklets</h1>
+	<p>You can, drag these links to your bookmarks bar, & click them to perform their functions:</p>
 
-  <a href='javascript:(function()
-{
-	const URL=window.location.href,
-		  Wach="watch?v=",Shorts="shorts/";
-	var Shorts_IndX=URL.indexOf(Shorts);
-	if(Shorts_IndX!=-1&&URL.indexOf(Wach)==-1)
-	{
-		var New=URL.replace(Shorts,Wach);
-		window.location=New;
-	}
-	else
-	{	alert("You have to be on \"youtube.com/shorts/\" for this to work!");   }
-})();'>🩳→⌚</a>
+	<p>
+		'Switches URL from annoying #TikTok-ish "shorts" view format, to normal "watch": '<a href='javascript:(function()
+		{
+			const URL=window.location.href,
+				  Wach="watch?v=",Shorts="shorts/";
+			var Shorts_IndX=URL.indexOf(Shorts);
+			if(Shorts_IndX!=-1&&URL.indexOf(Wach)==-1)
+			{
+				var New=URL.replace(Shorts,Wach);
+				window.location=New;
+			}
+			else
+			{	alert("You have to be on \"youtube.com/shorts/\" for this to work!");   }
+		})();'>🩳→⌚</a>
+	</p>
 </body>
 </html>
